@@ -1,0 +1,134 @@
+<!-- <button class="btn btn-info" (click)="toogleLoginAndRegister()">{{userStatus}}</button>
+
+<app-login *ngIf="userStatus=='old'"></app-login>
+<app-rgistration  *ngIf="userStatus=='new'"></app-rgistration> -->
+
+
+<!-- <app-switch></app-switch> -->
+
+<div class="container-fuild">
+    <div class="row">
+        <div class="col-md-12">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-danger"  >
+                <img src="https://www.waiin.com/wp-content/uploads/2021/07/WAi-symbol-placeholder.png" class="w-50 " height="40px">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto" >
+                    <li class="nav-item active">
+                      <a class="nav-link text-white" (click)="navFun()">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link text-white" (click)="navFun2()">about</a>
+                    </li>
+                   
+                    <li class="nav-item active">
+                      <a class="nav-link text-white " (click)="navFun3()">contact</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+        </div>
+        <div class="col-md-12">
+          <img src="https://media-exp1.licdn.com/dms/image/C561BAQHaW9qjqGRh7A/company-background_10000/0/1648627211230?e=2147483647&v=beta&t=KyyMmsdFaK9i5ZJ8bMEr3yjgi0PCAMZ9VigR7REf8mk" class="w-100" height="400px">
+        </div>
+        
+        <div class="col-md-12" [ngSwitch]="num">
+                <app-home *ngSwitchCase="1"></app-home>
+                <app-about *ngSwitchCase="2"></app-about>
+                <app-contact *ngSwitchCase="3"></app-contact>
+        </div>
+        
+    </div>
+</div>
+
+<style>
+
+  tr:nth-child(even){
+      background-color: burlywood;
+  }
+  tr:nth-child(odd){
+      background-color:rgb(155, 138, 144);
+  }
+
+</style>
+
+
+  <table class="table table-striped table-bordered bg-info text-white" >
+    <tr *ngFor="let obj of movies;let i=index; let o=odd; let e=even;">
+      <td>{{i}}</td>
+      <td>{{o}} : odd</td>
+      <td >{{e}} : even</td>
+      <td>{{obj.title}}</td>
+      <td>{{obj.cast}}</td>
+      <td>{{obj.director}}</td>
+      <td>{{obj.releaseDate}}</td>
+    </tr>
+  </table>
+
+
+  <select name="Movies" class="form-control"  required ngModel>
+    <option value="">choose one</option>
+    <option [ngValue]="c.cast" *ngFor="let c of movies">{{c.title}}</option>
+  </select>
+
+  <br><Br><br><Br>
+
+
+    
+  <select name="state" class="form-control">
+    <option value="">choose one</option>
+    <option [ngValue]="s.id" *ngFor="let s of states">{{s.name}}</option>
+  </select>
+
+<!-- <h1>new file html</h1>
+<p>{{title}}</p>
+
+
+<h1>{{getValue()}}</h1>
+
+my name : <input type="text" [value]="user">
+<button [disabled]="disabled"> show </button>
+{{user}}
+
+<br><Br>
+
+
+<input type="text" name="myName" [(ngModel)]="user">
+{{myName}}
+<br><Br>
+
+
+
+my username : <input type="text" (keyup)="0" #refv>{{refv.value}}
+
+<br>
+my username : <input type="text" (mouseenter)="mouseenter()" #refv2>
+<button (click)="clickFun(refv2.value)">click</button>
+<br><br>
+
+
+<img [src]="image" height="300px" width="300px"><br>
+<button type="button" style="padding:20px;background-color: aqua;" (click)="imageSrc(1)"></button>
+<button type="button" style="padding:20px;background-color: rgb(234, 0, 255);" (click)="imageSrc(2)"></button>
+<button type="button" style="padding:20px;background-color: rgb(23, 31, 31);" (click)="imageSrc(3)"></button>
+<button type="button" style="padding:20px;background-color: rgb(183, 255, 0);" (click)="imageSrc(4)"></button>
+
+
+<Br><br>
+
+
+enter ovels :<input type="text" style="padding: 10px;" (keyup)="ovelFun(v.value)" #v>
+
+<BR><BR>
+
+<button  (click)="clrFun(ref)" #ref>COLOR</button>
+
+<Br><br><Br><br><Br><br><Br><br><Br> -->

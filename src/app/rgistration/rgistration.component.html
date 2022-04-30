@@ -1,0 +1,85 @@
+<p>rgistration works!</p>
+
+
+<!-- <button class="btn btn-outline-danger ml-3" (click)="btnrFun(btnr)" #btnr>{{namebtnrr}}</button> -->
+
+
+<form action="" class="ml-5 mt-5 p-5 alert alert-success w-50 border border-danger" [hidden]="hide2">
+
+    <div class="container" >
+        <h1 class="text-danger">Registration Form</h1>
+        <hr>
+
+        <div class="row">
+
+            <div class="col-md-6 p-3"><label>Candidate Name :</label>
+                <input type="text" class="form-control " name="candidate Name"
+                    placeholder="enter Candidate Name">
+            </div>
+            <div class="col-md-6 p-3"><label>company id :</label>
+                <input type="text" class="form-control " name="company id"
+                    placeholder="enter company id">
+            </div>
+
+            <div class="col-md-6 p-3"><label>email :</label>
+                <input type="text" class="form-control " name="email" placeholder="enter email">
+            </div>
+            <div class="col-md-6 p-3"><label>phone :</label>
+                <input type="phone" class="form-control " name="phone " placeholder="enter phone ">
+            </div>
+
+            <div class="col-md-4"><label>DOB :</label>
+                <input type="date" class="form-control " name="DOB">
+            </div>
+            <div class="col-md-8 mt-3">
+                <label>Gender :</label><br>
+
+                <input type="radio" class="ml-2 mr-2" name="phone " placeholder="enter phone ">
+                <label>male :</label>
+
+                <input type="radio" class="ml-2 mr-2" name="phone " placeholder="enter phone ">
+                <label>female :</label>
+
+                <input type="radio" class="ml-2 mr-2" name="phone " placeholder="enter phone ">
+                <label>other :</label>
+            </div>
+            <div class="col-md-6 p-3"><label>City :</label>
+                <select class="form-control " name="city">
+                    <option value="">choose city</option>
+                    <option>Ahmednagar</option>
+                    <option>mumbai</option>
+                    <option>pune</option>
+                    <option>satara</option>
+                    <option>nashik</option>
+                    <option>aurangbad</option>
+                    <option>jalna</option>
+                </select>
+            </div>
+
+            <div class="col-md-6 p-3 "><label>State :</label>
+                <select class="form-control " name="State">
+                    <option value="">choose state</option>
+                    <option>maharashtra</option>
+                    <option>panjab</option>
+                    <option>hariyana</option>
+                    <option>gujrat</option>
+                    <option>uttar-pradesh</option>
+                    <option>madhya-pradesh</option>
+                    <option>Asam</option>
+                </select>
+            </div>
+
+            <div class="col-md-6 p-3"><label>joining date :</label>
+                <input type="date" class="form-control " name="joining date ">
+            </div>
+
+            <div class="col-md-12">
+                <hr>
+                <button class=" btn btn-outline-info ml-4">submit</button>
+                <button class=" btn btn-outline-danger ml-2">cancel</button>
+            </div>
+
+        </div>
+
+    </div>
+</form>

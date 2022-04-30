@@ -1,0 +1,36 @@
+<p>login works!</p>
+
+<button class="btn btn-outline-danger" (click)="btnFun(btnf)" #btnf>{{namebtn}}</button>
+<button class="btn btn-outline-danger ml-3" (click)="btnrFun(btnr)" #btnr>{{namebtnrr}}</button>
+
+
+
+
+<form action="" class="ml-5 mt-5 p-5 alert alert-warning shadow w-25 border border-warning" [hidden]="hide">
+   
+    <img src="https://www.waiin.com/wp-content/uploads/2021/07/WAi-symbol-placeholder.png" class="w-50 " height="60px"><span class="text-dark">Technologies</span><hr>
+    <h6 class="text-danger mt-3">Login Form</h6>
+    
+    <label>username :</label>
+    <input type="text" class="form-control border border-warning" name="username" placeholder="enter username"><BR>
+    <label>password :</label>
+    <input type="password" class="form-control border border-warning" name="password" placeholder="enter password">
+    forgot passsword?<a href=""  (click)="btnrFun(btnr)" #btnr>register</a><hr>
+
+    <button class=" btn btn-outline-primary ml-4">submit</button>
+    <button class=" btn btn-outline-danger ml-2">cancel</button>
+</form>
+
+
+
+<app-rgistration  *ngIf="namebtnrr=='Show register Form'"></app-rgistration>
+
+
+
+
+	 
+
+
+
+
+
